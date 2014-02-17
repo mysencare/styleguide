@@ -1,0 +1,648 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMHW Style Guide - Gradebook</title>
+
+    <!-- Bootstrap -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <link href="css/bootstrap-datetimepicker.css" rel="stylesheet">
+    <link href="css/calendar.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/filetypes.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-logged-in" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-user fa-stack-1x" style="color:#555555;"></i>
+            </span>
+            Welcome
+            <strong>Teresa</strong>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#"><i class="fa fa-home fa-2x"></i><span class="nav-text visible-xs">Home</span></a></li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-plus fa-2x"></i><span class="nav-text visible-xs">Set Task</span></a>
+              <ul class="dropdown-menu bg-primary">
+                <li><a href="#">Set Homework</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Set Quiz</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Set Class Test Reminder</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Set Exam Reminder</a></li>
+              </ul>
+            </li>
+            <li><a href="/calendar"><i class="fa fa-calendar fa-2x"></i><span class="nav-text visible-xs">Calendar</span> </a></li>
+            <li class="active"><a href="/gradebook"><i class="fa fa-book fa-2x"></i><span class="nav-text visible-xs">Gradebook</span> </a></li>
+            <li><a href="#"><i class="fa fa-folder-open fa-2x"></i><span class="nav-text visible-xs">Resources</span> </a></li>
+            <li><a href="/main_layout"><i class="fa fa-bell fa-2x"></i><span class="nav-text visible-xs">Announcements</span> </a></li>
+            <li><a href="/settings"><i class="fa fa-cog fa-2x"></i><span class="nav-text visible-xs">Settings</span> </a></li>
+            <li><a href="#"><i class="fa fa-power-off fa-2x"></i><span class="nav-text visible-xs">Logout</span> </a></li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <nav class="navbar navbar-sub" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="/main_layout">Full Width Layout</a></li>
+            <li class=""><a href="/left_sidebar_layout">Left Sidebar Layout</a></li>
+            <li class=""><a href="/right_sidebar_layout">Right Sidebar Layout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Gradebook <i class="icon-file-xls pull-right"></i></h2>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+
+          <div class="row" style="margin-bottom:30px; margin-top: 20px;">
+            <div class="col-md-4 col-sm-4" >
+              <div class='input-group date datepicker' style="margin-bottom:10px;">
+                  <input type='text' class="form-control" data-format="LL" value="February 17 2014" />
+                  <span class="input-group-addon"><span class="fa fa-calendar"></span>
+                  </span>
+              </div>
+            </div>
+
+            <div class="col-md-2 col-sm-2">
+              <select class="selectpicker" data-style="select-default" data-width="100%">
+                <option>All Teachers</option>
+                <option>Test</option>
+                <option>Test</option>
+              </select>
+            </div>
+
+            <div class="col-md-2 col-sm-2">
+              <select class="selectpicker" data-style="select-default" data-width="100%">
+                <option>All Subjects</option>
+                <option>Test</option>
+                <option>Test</option>
+              </select>
+            </div>
+
+            <div class="col-md-2 col-sm-2">
+              <select class="selectpicker" data-style="select-default" data-width="100%">
+                <option>All Classes</option>
+                <option>Test</option>
+                <option>Test</option>
+              </select>
+            </div>
+
+            <div class="col-md-2 col-sm-2">
+              <select class="selectpicker" data-style="select-default" data-width="100%">
+                <option>All Years</option>
+                <option>Test</option>
+                <option>Test</option>
+              </select>
+            </div>
+          </div>
+        </div>
+      </div>
+
+        <div class="row">
+          <div class="col-md-12">
+
+
+          <div class="table-responsive">
+            <table class="gradebook table table-bordered">
+                <thead>
+                  <tr>
+                    <th>05A</th>
+                    <th>
+                      <div class="class_task_state closed">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Closed"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Feb 7th</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/202/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-quiz fade-out highlight">Quiz was on Fri 7th Feb</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/202/submissions">Test Draft</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/202/submissions"></a>
+                            </p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/202/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="class_task_state open">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Open"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Feb 10th</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/203/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-homework fade-out highlight">Deadline past - 10.02.14</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/203/submissions">Draft</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/203/submissions"></a></p><p><a class="lightbox_link" href="/teacher/homeworks/203/submissions">sasddassa</a></p>
+                            <p></p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/203/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="class_task_state open">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Open"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Feb 13th</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/206/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-exam fade-out highlight">Exam was on Thu 13th Feb</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/206/submissions">English Exam ( )</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/206/submissions"></a></p><p><a class="lightbox_link" href="/teacher/homeworks/206/submissions">sasddassa</a></p>
+                            <p></p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/206/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="class_task_state open">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Open"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Feb 13th</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/205/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-homework fade-out highlight">Deadline past - 13.02.14</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/205/submissions">Draft</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/205/submissions"></a></p><p><a class="lightbox_link" href="/teacher/homeworks/205/submissions">sasddassa</a></p>
+                            <p></p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/205/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="class_task_state open">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Open"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Feb 13th</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/204/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-quiz fade-out highlight">Quiz was on Thu 13th Feb</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/204/submissions">Draft</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/204/submissions"></a></p><p><a class="lightbox_link" href="/teacher/homeworks/204/submissions">sasddassa</a></p>
+                            <p></p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/204/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="class_task_state open">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Open"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Feb 13th</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/207/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-class-test fade-out highlight">Class test was on Thu 13th Feb</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/207/submissions">Draft</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/207/submissions"></a></p><p><a class="lightbox_link" href="/teacher/homeworks/207/submissions">sasddassa</a></p>
+                            <p></p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/207/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="class_task_state open">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Open"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Feb 16th</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/221/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-quiz fade-out highlight">Quiz was on Sun 16th Feb</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/221/submissions">Test Draft Quiz</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/221/submissions"></a>
+                            </p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/221/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="class_task_state closed">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Closed"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Feb 20th</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/211/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-quiz highlight">Due on Thu 20th Feb</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/211/submissions">Test</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/211/submissions"></a></p><p><a class="lightbox_link" href="/teacher/homeworks/211/submissions">easdadsa</a></p>
+                            <p></p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/211/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="class_task_state closed">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Closed"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Mar 1st</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/200/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-homework highlight">Due on Sat 1st Mar</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/200/submissions">Draft Test</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/200/submissions"></a></p><p><a class="lightbox_link" href="/teacher/homeworks/200/submissions">Draft Test</a></p>
+                            <p></p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/200/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                    <th>
+                      <div class="class_task_state closed">
+                        <i class="fa fa-inbox" data-behavior="tooltip" data-trigger="hover" title="" data-original-title="Submissions Closed"></i>
+                        <div class="details_container">
+                          <a href="#" class="class_task_link" data-original-title="" title="">Mar 3rd</a>
+                          <div class="lightbox lightbox-overlay" href="/teacher/homeworks/201/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <h3>English</h3>
+                            <p>
+                              05A
+                              , Mr. T. Walter
+                            </p>
+                            <p>
+                              <em class="calendar-item-homework highlight">Due on Mon 3rd Mar</em>
+                            </p>
+                            <h4>
+                              <a class="lightbox_link" href="/teacher/homeworks/201/submissions">Test Draft</a>
+                            </h4>
+                            <p>
+                              <a class="lightbox_link" href="/teacher/homeworks/201/submissions"></a>
+                            </p>
+                            <p class="details_button">
+                              <a class="btn btn-primary" href="/teacher/homeworks/201/submissions">View details</a>
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td data-original-title="" title="">Alia Halvorson</td>
+                    <td class="incomplete" data-sub-id="483" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted" data-sub-id="486" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="495" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted" data-sub-id="492" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="489" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted" data-sub-id="498" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="not_submitted" data-sub-id="537" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="510" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted" data-sub-id="477" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted_late" data-sub-id="480" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade">
+                          4<div class="lightbox lightbox-overlay" href="/teacher/homeworks/201/submissions" id="overlay-1" style="display:none">
+                            <span class="anchor"></span>
+                            <p>
+                              zxsdsa
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-original-title="" title="">Jaquan Veum</td>
+                    <td class="incomplete" data-sub-id="482" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted_late" data-sub-id="485" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="494" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted" data-sub-id="491" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="488" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="resubmission" data-sub-id="497" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="not_submitted" data-sub-id="536" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="509" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="476" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted_late" data-sub-id="479" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td data-original-title="" title="">Llewellyn Wintheiser</td>
+                    <td class="incomplete" data-sub-id="481" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="not_submitted" data-sub-id="484" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="493" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted" data-sub-id="490" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="487" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="resubmission" data-sub-id="496" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="submitted" data-sub-id="535" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade">100%</div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="508" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="incomplete" data-sub-id="475" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                    <td class="not_submitted" data-sub-id="478" data-original-title="" title="">
+                      <div class="details_container">
+                        <div class="grade"></div>
+                      </div>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 center-text">
+            <p><small>© Teacher Centric. All Rights Reserved 2008 - 2012. <br>Teacher Centric is registered in England and Wales under company number 06055034. <br>Registered office TeacherCentric Ltd, 144a Clerkenwell Road, London, EC1R 5DF, United Kingdom.</small></p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/moment.js"></script>
+    <script src="js/bootstrap-datetimepicker.js"></script>
+    <script src="js/underscore.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script src="js/calendar.js"></script>
+    <script>
+      $(function(){
+        $('.selectpicker').selectpicker();
+        $('.dh-event a').popover();
+        $('.datepicker').datetimepicker({
+          pickTime: false
+        });
+      });
+    </script>
+  </body>
+</html>

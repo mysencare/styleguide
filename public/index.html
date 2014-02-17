@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>SMHW Style Guide</title>
+
+    <!-- Bootstrap -->
+    <link href='http://fonts.googleapis.com/css?family=Lato:300,400,700' rel='stylesheet' type='text/css'>
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/bootstrap-select.css" rel="stylesheet">
+    <link href="css/font-awesome.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+      <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <nav class="navbar navbar-default navbar-logged-in" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/index">
+            <span class="fa-stack fa-lg">
+              <i class="fa fa-circle fa-stack-2x"></i>
+              <i class="fa fa-user fa-stack-1x" style="color:#555555;"></i>
+            </span>
+            Welcome
+            <strong>Teresa</strong>
+          </a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-right">
+            <li class="active"><a href="/index" data-toggle="tooltip" data-placement="bottom" title="Homepage"><i class="fa fa-home fa-2x"></i><span class="nav-text visible-xs">Home</span></a></li>
+            <li class="dropdown">
+              <a href="#" data-toggle="tooltip" data-placement="bottom" title="Set Task" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-plus fa-2x"></i><span class="nav-text visible-xs">Set Task</span></a>
+              <ul class="dropdown-menu bg-primary">
+                <li><a href="#">Set Homework</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Set Quiz</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Set Class Test Reminder</a></li>
+                <li class="divider"></li>
+                <li><a href="#">Set Exam Reminder</a></li>
+              </ul>
+            </li>
+            <li><a href="/calendar" data-toggle="tooltip" data-placement="bottom" title="My Calendar"><i class="fa fa-calendar fa-2x"></i><span class="nav-text visible-xs">Calendar</span> </a></li>
+            <li><a href="/gradebook" data-toggle="tooltip" data-placement="bottom" title="Gradebook"><i class="fa fa-book fa-2x"></i><span class="nav-text visible-xs">Gradebook</span> </a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Resources"><i class="fa fa-folder-open fa-2x"></i><span class="nav-text visible-xs">Resources</span> </a></li>
+            <li><a href="/main_layout" data-toggle="tooltip" data-placement="bottom" title="Annoucements"><i class="fa fa-bell fa-2x"></i><span class="nav-text visible-xs">Announcements</span> </a></li>
+            <li><a href="/settings" data-toggle="tooltip" data-placement="bottom" title="Settings"><i class="fa fa-cog fa-2x"></i><span class="nav-text visible-xs">Settings</span> </a></li>
+            <li><a href="#" data-toggle="tooltip" data-placement="bottom" title="Logout"><i class="fa fa-power-off fa-2x"></i><span class="nav-text visible-xs">Logout</span> </a></li>
+
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav>
+
+    <nav class="navbar navbar-sub" role="navigation">
+      <div class="container">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class=""><a href="/main_layout">Full Width Layout</a></li>
+            <li class=""><a href="/left_sidebar_layout">Left Sidebar Layout</a></li>
+            <li class=""><a href="/right_sidebar_layout">Right Sidebar Layout</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col-md-12">
+          <h1>Show My Homework Style Guide</h1>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Basic Elements</h2>
+        </div>
+        <div class="col-md-12">
+          <h4>Buttons</h4>
+          <button type="button" class="btn btn-default">.btn-default</button>
+          <button type="button" class="btn btn-primary">.btn-primary</button>
+          <button type="button" class="btn btn-success">.btn-success</button>
+          <button type="button" class="btn btn-info">.btn-info</button>
+          <button type="button" class="btn btn-warning">.btn-warning</button>
+          <button type="button" class="btn btn-danger">.btn-danger</button>
+
+          <h4>Font Awesome Buttons</h4>
+          <a class="btn btn-danger" href="#"><i class="fa fa-trash-o fa-lg"></i> Delete</a>
+          <a class="btn btn-primary btn-lg" href="#"><i class="fa fa-print fa-lg"></i> Print results</a>
+          <a class="btn btn-info" href="#"><i class="fa fa-question fa-lg"></i> Visit help center</a>
+
+          <hr />
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <h3>Inputs</h3>
+          <form role="form">
+            <div class="form-group">
+              <label for="exampleInputEmail1">Email address</label>
+              <div class="well">
+                <div class="row">
+                  <div class="col-md-5">
+                    <div class="form-group has-success">
+                      <input type="email" class="form-control input-lg" id="exampleInputEmail1" placeholder="Enter spelling...">
+                    </div>
+                  </div>
+                  <div class="col-md-2">
+                    <a class="btn btn-primary btn-lg" href="#"> Submit</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="exampleInputPassword1">Password</label>
+              <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+            </div>
+            <div class="checkbox">
+              <label>
+                <input type="checkbox"> Check me out
+              </label>
+            </div>
+            <button type="submit" class="btn btn-default">Submit</button>
+          </form>
+          <hr />
+        </div>
+
+        <div class="col-md-12">
+          <h3>Select</h3>
+        </div>
+        <div class="col-md-6">
+          <select class="selectpicker" data-style="select-default">
+            <option>Default</option>
+            <option>Test</option>
+            <option>Test</option>
+          </select>
+        </div>
+
+        <div class="col-md-12">
+          <hr />
+        </div>
+      </div>
+
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Tables</h2>
+
+          <h4>Normal Table</h4>
+          <table class="table table-bordered table-striped">
+            <thead>
+              <tr>
+                <th style="font-size:20px;">Spelling Word</th>
+                <th style="font-size:20px;">1st Attempt</th>
+                <th style="font-size:20px;">2nd Attempt</th>
+                <th style="font-size:20px;">3rd Attempt (with hint)</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td colspan="4"><strong style="font-size:16px;">Easy section</strong></td>
+              </tr>
+              <tr>
+                <td>Cat</td>
+                <td style="color: red;">Cate</td>
+                <td style="color: green; font-weight:bold;">Cat</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Dog</td>
+                <td style="color: red;">Doug</td>
+                <td style="color: red;">Doge</td>
+                <td style="color: green; font-weight:bold;">Dog</td>
+              </tr>
+              <tr>
+                <td>Chicken</td>
+                <td style="color: green; font-weight:bold;">Chicken</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr >
+                <td style="background-color: #555; color: #fff;">Results: </td>
+                <td style="background-color: #555; color: #fff;">3/3 (100%)</td>
+                <td style="background-color: #555; color: #fff;"></td>
+                <td style="background-color: #555; color: #fff;"></td>
+              </tr>
+              <tr>
+                <td colspan="4"><strong style="font-size:16px;">Medium section</strong></td>
+              </tr>
+
+              <tr>
+                <td>Accommodate</td>
+                <td style="color: red;">Acommodate</td>
+                <td style="color: red;">Accomodate</td>
+                <td style="color: red;">Accommodaite</td>
+              </tr>
+              <tr>
+                <td>Acquire</td>
+                <td style="color: red;">Aquire</td>
+                <td style="color: green; font-weight:bold;">Acquire</td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>Conscientious</td>
+                <td style="color: green; font-weight:bold;">Conscientious</td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr >
+                <td style="background-color: #555; color: #fff;">Results: </td>
+                <td style="background-color: #555; color: #fff;">2/3 (66%)</td>
+                <td style="background-color: #555; color: #fff;"></td>
+                <td style="background-color: #555; color: #fff;"></td>
+              </tr>
+              <tr >
+                <td style="background-color: #fff; color: #000; font-size: 17px; font-weight:bold;">Total Result: </td>
+                <td style="background-color: #fff; color: #000; font-size: 17px; font-weight:bold;">5/6 (83%)</td>
+                <td style="background-color: #fff; color: #000;"></td>
+                <td style="background-color: #fff; color: #000;"></td>
+              </tr>
+            </tbody>
+          </table>
+
+          <h4>Responsive Table</h4>
+
+          <div class="table-responsive">
+            <table class="table table-bordered table-striped">
+              <thead>
+                <tr>
+                  <th>#</th>
+                  <th>First Name</th>
+                  <th>Last Name</th>
+                  <th>Username</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@mdo</td>
+                </tr>
+                <tr>
+                  <td>1</td>
+                  <td>Mark</td>
+                  <td>Otto</td>
+                  <td>@TwBootstrap</td>
+                </tr>
+                <tr>
+                  <td>2</td>
+                  <td>Jacob</td>
+                  <td>Thornton</td>
+                  <td>@fat</td>
+                </tr>
+                <tr>
+                  <td>3</td>
+                  <td>Test</td>
+                  <td>Larry the Bird</td>
+                  <td>@twitter</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Grid System</h2>
+        </div>
+      </div>
+
+      <div class="row show-grid">
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+        <div class="col-md-1">.col-md-1</div>
+      </div>
+      <div class="row show-grid">
+        <div class="col-md-8">.col-md-8</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+      <div class="row show-grid">
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+        <div class="col-md-4">.col-md-4</div>
+      </div>
+      <div class="row show-grid">
+        <div class="col-md-6 col-xs-6">.col-md-6 .col-xs-6</div>
+        <div class="col-md-6 col-xs-6">.col-md-6 .col-xs-6</div>
+      </div>
+      <div class="row">
+        <div class="col-md-12"><hr /></div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Font Awesome Icons</h2>
+        </div>
+        <div class="col-md-12">
+          <div class="table-responsive">
+              <table class="table table-bordered table-striped">
+                <thead>
+                  <tr>
+                    <th>#</th>
+                    <th>Icon Class</th>
+                    <th>Icon Code</th>
+                    <th>Icon Name</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td><i class="fa fa-home fa-2x"></i></td>
+                    <td>fa-home</td>
+                    <td><code lang="en">xf015;</code></td>
+                    <td>Home</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-th-list fa-2x"></i></td>
+                    <td>fa-th-list</td>
+                    <td><code lang="en">xf00b;</code></td>
+                    <td>To Do List</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-calendar fa-2x"></i></td>
+                    <td>fa-calendar</td>
+                    <td><code lang="en">xf073;</code></td>
+                    <td>Calendar</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-user fa-2x"></i></td>
+                    <td>fa-user</td>
+                    <td><code lang="en">xf007;</code></td>
+                    <td>User</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-book fa-2x"></i></td>
+                    <td>fa-book</td>
+                    <td><code lang="en">xf02d;</code></td>
+                    <td>Gradebook</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-bell fa-2x"></i></td>
+                    <td>fa-bell</td>
+                    <td><code lang="en">xf0f3;</code></td>
+                    <td>Annoucements</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-cog fa-2x"></i></td>
+                    <td>fa-cog</td>
+                    <td><code lang="en">xf013;</code></td>
+                    <td>Settings</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-plus fa-2x"></i></td>
+                    <td>fa-plus</td>
+                    <td><code lang="en">xf067;</code></td>
+                    <td>Add/New</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-folder-open fa-2x"></i></td>
+                    <td>fa-folder-open</td>
+                    <td><code lang="en">xf07c;</code></td>
+                    <td>Resources</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-facebook fa-2x"></i></td>
+                    <td>fa-facebook</td>
+                    <td><code lang="en">xf09a;</code></td>
+                    <td>Facebook</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-twitter fa-2x"></i></td>
+                    <td>fa-twitter</td>
+                    <td><code lang="en">xf099;</code></td>
+                    <td>Twitter</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-google-plus fa-2x"></i></td>
+                    <td>fa-google-plus</td>
+                    <td><code lang="en">xf0d5;</code></td>
+                    <td>Google</td>
+                  </tr>
+                  <tr>
+                    <td><i class="fa fa-power-off fa-2x"></i></td>
+                    <td>fa-power-off</td>
+                    <td><code lang="en">xf011;</code></td>
+                    <td>Logout</td>
+                  </tr>
+                </tbody>
+              </table>
+            </div>
+            <hr />
+          </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <h2>Colour Swatches</h2>
+        </div>
+
+        <div class="col-md-12">
+          <h4>General</h4>
+        </div>
+
+        <div class="col-md-2">
+          <div class="pallete-item">
+            <div class="pallete orange">
+              <h5>$orange</h5>
+              <h5>#f3a100</h5>
+            </div>
+            <div class="pallete dark-orange">
+              <h5>$darkOrange</h5>
+              <h5>#e67f00</h5>
+            </div>
+            <div class="pallete bright-orange">
+              <h5>$brightOrange</h5>
+              <h5>#f3d400</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="pallete-item">
+            <div class="pallete blue">
+              <h5>$blue</h5>
+              <h5>#0e79c9</h5>
+            </div>
+            <div class="pallete bright-blue">
+              <h5>$brightBlue</h5>
+              <h5>#3ba9f7</h5>
+            </div>
+            <div class="pallete brightest-blue">
+              <h5>$brightestBlue</h5>
+              <h5>#e6f5fa</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2">
+          <div class="pallete-item">
+            <div class="pallete green">
+              <h5>$green</h5>
+              <h5>#7fb106</h5>
+            </div>
+            <div class="pallete bright-green">
+              <h5>$brightGreen</h5>
+              <h5>#5ebd84</h5>
+            </div>
+            <div class="pallete brightest-green">
+              <h5>$brightestGreen</h5>
+              <h5>#eaf6d7</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <h4>Class Task</h4>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete homework">
+              <h5>HOMEWORK</h5>
+              <h5>BG: #62be5b</h5>
+              <h5>FG: #204a1d</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete class-test">
+              <h5>CLASS TEST</h5>
+              <h5>BG: #e6c6ff</h5>
+              <h5>FG: #9814ff</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete quiz">
+              <h5>QUIZ</h5>
+              <h5>BG: #ffc592</h5>
+              <h5>FG: #de6900</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete exam">
+              <h5>EXAM</h5>
+              <h5>BG: #5bdbdf</h5>
+              <h5>FG: #166f72</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete take_away_homework">
+              <h5>TAKE AWAY HOMEWORK</h5>
+              <h5>BG: #00549E</h5>
+              <h5>FG: #FFFFFF</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete spelling_test">
+              <h5>SPELLING TEST</h5>
+              <h5>BG: #8A0748</h5>
+              <h5>FG: #FFFFFF</h5>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+
+        <div class="col-md-12">
+          <h4>Submission Status</h4>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete submitted">
+              <h5>SUBMITTED</h5>
+              <h5>#3DBF36</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete submitted-late">
+              <h5>SUBMITTED LATE</h5>
+              <h5>#297F4C</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete absent">
+              <h5>ABSENT</h5>
+              <h5>#0678cf</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete resubmission">
+              <h5>RESUBMISSION</h5>
+              <h5>#F2A300</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-2 col-xs-6">
+          <div class="pallete-item">
+            <div class="pallete not-submitted">
+              <h5>NOT SUBMITTED</h5>
+              <h5>#ff845d</h5>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-12">
+          <hr />
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-md-12">
+          <h2>Logos</h2>
+          <h4>White</h4>
+        </div>
+
+        <div class="col-md-4">
+          <div class="panel panel-default panel-blue">
+            <div class="panel-heading">320x320px Logo</div>
+            <div class="panel-body">
+              <img src="img/logos/white320.png" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="panel panel-default panel-blue">
+            <div class="panel-heading">120x120px Logo</div>
+            <div class="panel-body">
+              <img src="img/logos/white120.png" class="img-responsive" />
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-12 center-text">
+            <p><small>© Teacher Centric. All Rights Reserved 2008 - 2012. <br>Teacher Centric is registered in England and Wales under company number 06055034. <br>Registered office TeacherCentric Ltd, 144a Clerkenwell Road, London, EC1R 5DF, United Kingdom.</small></p>
+          </div>
+        </div>
+      </div>
+
+    </footer>
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/bootstrap-select.js"></script>
+    <script>
+      $(function(){
+        $('.selectpicker').selectpicker();
+        $('a').tooltip();
+      });
+    </script>
+  </body>
+</html>

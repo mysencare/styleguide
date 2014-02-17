@@ -1,0 +1,78 @@
+@font-face {
+	font-family: 'filetypes';
+	src:url('../fonts/filetypes.eot?121z71');
+	src:url('../fonts/filetypes.eot?#iefix121z71') format('embedded-opentype'),
+		url('../fonts/filetypes.woff?121z71') format('woff'),
+		url('../fonts/filetypes.ttf?121z71') format('truetype'),
+		url('../fonts/filetypes.svg?121z71#filetypes') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+[class^="icon-file-"],
+[class*=" icon-file-"] {
+	font-family: 'filetypes';
+
+}
+
+.icon-file-:before {
+	content: "\e600";
+}
+.icon-file-doc:before,
+.icon-file-docx:before
+{
+	content: "\e601";
+}
+.icon-file-xls:before,
+.icon-file-xlsx:before 
+{
+	content: "\e602";
+}
+.icon-file-ppt:before,
+.icon-file-pptx:before
+{
+	content: "\e603";
+}
+.icon-file-wav:before,
+.icon-file-mp3:before,
+.icon-file-m4a:before,
+.icon-file-wma:before
+{
+	content: "\e604";
+}
+.icon-file-jpg:before,
+.icon-file-png:before,
+.icon-file-gif:before
+{
+	content: "\e605";
+}
+.icon-file-mp4:before,
+.icon-file-m4v:before,
+.icon-file-mpg:before,
+.icon-file-mov:before,
+.icon-file-wmv:before
+{
+	content: "\e606";
+}
+.icon-file-zip:before,
+.icon-file-rar:before,
+.icon-file-gz:before
+{
+	content: "\e607";
+}
+.icon-file-xml:before,
+.icon-file-htm:before
+{
+	content: "\e608";
+}
+.icon-file-css:before,
+.icon-file-js:before 
+{
+	content: "\e609";
+}
+.icon-file-pdf:before {
+	content: "\e60a";
+}
+.icon-file-odt:before {
+	content: "\e60b";
+}
